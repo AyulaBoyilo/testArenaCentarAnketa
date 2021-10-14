@@ -96,6 +96,11 @@ textarea {
         padding-left: 40px;
     }
 
+    @include for-phone {
+        font-size: 14px;
+        padding-left: 40px;
+    }
+
     @media screen and (min-width: 1025px) {
         font-size: 20px;
     }
@@ -105,10 +110,6 @@ textarea {
 	width: 44px;	
 	margin: 0 auto;
 	position: relative;
-
-    @include for-phone {
-        width: 85%;
-    }
 
     @media screen and (min-width: 2000px) {
         margin: 0;
