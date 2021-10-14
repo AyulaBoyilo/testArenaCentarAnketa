@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-16" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ARENA NASLOV MISSING</title>
+    <meta name="title" content="JYSK škola spavanja" />
+    <meta name="description" content="Dobrodošli u JYSK školu spavanja" />
+    <link rel="stylesheet" href="css/main.css?v=3" />
+
+    <!-- Facebook -->
+    <meta property="og:url" content="https://native.story.hr/preview/JYSK/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ARENA NASLOV MISSING" />
+    <meta
+      property="og:description"
+      content="Otkrij nam kako spavaš i osvoji JYSK nagradu"
+    />
+    <meta
+      property="og:image"
+      content="https://native.story.hr/preview/JYSK/share.jpg"
+    />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="720" />
+    <meta property="fb:app_id" content="684146431996498" />
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="./assets/images/favicon-32x32.png" sizes="32x32">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Festive&family=Anton&family=Roboto:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="lib/jquery.serialize-object.min.js"></script>
+  </head>
+
+  <body>
+    <!-- header with title & subtitle -->
+    <header class="header">
+      <div class="header__wrapper">
+        <h1>ZA OVAJ<br>BOŽIĆ ŽELIM...</h1>
+        <div class="subhead">
+          <h3>VELIKO<br>ISTRAŽIVANJE</h3>
+          <div class="brands">
+            <img class="brands__story" src="./assets/images/logo_story.svg" alt="logo Story">
+            <span>&</span>
+            <img class="brands__arena" src="./assets/images/logo_arena_centar.png" alt="logo Arena Centar">
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <!-- banner block -->
+    <section class="banner">
+      <p class="banner__text">Ispuni anketu i osvoji poklon karticu Arena Centra od 1000 kn za blagdanski shopping!</p>
+    </section>
+
+    <!-- form block -->
+    <section class="form__uvod">
+      <p>Jeste li primijetili, ali blagdanska euforija svake godine počinje sve ranije.  Stoga vas i mi dovoljno rano pitamo: što ove godine stvarno želite za Božić?  Arena Centar&Story.hr provode veliko istraživanje o navikama, željama i potrebama u doba blagdana. Ove godine pripremite sve na vrijeme – bez stresa.</p>
+    </section>
+
+    <section class="form">
+      <div class="form__wrapper is-flex is-justify-content-center">
+        <form id="anketaArena">
+
+          <div class="form__inputs-wrapper">
+            <!-- Spol -->
+            <h3 class="form__question">ti si?</h3>
+            <label for="zena" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="zena"
+                  name="spol"
+                  value="zena"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              A.&nbsp;&nbsp;&nbsp;Žena
+            </label>
+            <label for="muskarac" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="muskarac"
+                  name="spol"
+                  value="muskarac"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              B.&nbsp;&nbsp;&nbsp;Muškarac
+            </label>
+  
+            <!-- Godina -->
+            <h3 class="form__question">Koliko imaš godina?</h3>
+            <label for="manje_od_20" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="manje_od_20"
+                  name="godine"
+                  value="manje_od_20"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              A.&nbsp;&nbsp;&nbsp;Manje od 20
+            </label>
+            <label for="21-30" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="21-30"
+                  name="godine"
+                  value="21-30"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              B.&nbsp;&nbsp;&nbsp;21-30
+            </label>
+            <label for="31-40" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="31-40"
+                  name="godine"
+                  value="31-40"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              C.&nbsp;&nbsp;&nbsp;31-40
+            </label>
+            <label for="vise_od_40" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="vise_od_40"
+                  name="godine"
+                  value="vise_od_40"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              D.&nbsp;&nbsp;&nbsp;Više od 40
+            </label>
+  
+            <!-- Regija -->
+            <h3 class="form__question">Iz koje si regije?</h3>
+            <label for="sredisnja" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="sredisnja"
+                  name="regija"
+                  value="sredisnja"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              A.&nbsp;&nbsp;&nbsp;Središnja Hrvatska
+            </label>
+            <label for="istocna" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="istocna"
+                  name="regija"
+                  value="istocna"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              B.&nbsp;&nbsp;&nbsp;Istočna Hrvatska
+            </label>
+            <label for="gorska" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="gorska"
+                  name="regija"
+                  value="gorska"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              C.&nbsp;&nbsp;&nbsp;Gorska Hrvatska
+            </label>
+            <label for="sjeverno-primorje" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="sjeverno-primorje"
+                  name="regija"
+                  value="sjeverno-primorje"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              D.&nbsp;&nbsp;&nbsp;Sjeverno hrvatsko primorje
+            </label>
+            <label for="juzno-primorje" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="juzno-primorje"
+                  name="regija"
+                  value="juzno-primorje"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              E.&nbsp;&nbsp;&nbsp;Južno hrvatsko primorje
+            </label>
+  
+            <!-- Prva asocijacija -->
+            <h3 class="form__question">Koja je tvoja prva asocijacija kada pomisliš na božićne blagdane?</h3>
+            <label for="kicenja_bora" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="kicenja_bora"
+                  name="asocijacija"
+                  value="kicenja_bora"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              A.&nbsp;&nbsp;&nbsp;Kićenja bora
+            </label>
+            <label for="blagdanske_delicije" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="blagdanske_delicije"
+                  name="asocijacija"
+                  value="blagdanske_delicije"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              B.&nbsp;&nbsp;&nbsp;Blagdanske delicije
+            </label>
+            <label for="blagdanski_shopping" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="blagdanski_shopping"
+                  name="asocijacija"
+                  value="blagdanski_shopping"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              C.&nbsp;&nbsp;&nbsp;Blagdanski shopping
+            </label>
+            <label for="gnjavaza" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="gnjavaza"
+                  name="asocijacija"
+                  value="gnjavaza"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              D.&nbsp;&nbsp;&nbsp;Gnjavaža
+            </label>
+  
+            <!-- Blagdanski shopping vam je -->
+            <h3 class="form__question">
+              Blagdanski shopping vam je…
+            </h3>
+            <label for="cisti_uzitak" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="cisti_uzitak"
+                  name="shopping_je"
+                  value="cisti_uzitak"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              A.&nbsp;&nbsp;&nbsp;Čisti užitak
+            </label>
+            <label for="dodatna_obaveza" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="dodatna_obaveza"
+                  name="shopping_je"
+                  value="dodatna_obaveza"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              B.&nbsp;&nbsp;&nbsp;Dodatna obaveza
+            </label>
+            <label for="stres" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="stres"
+                  name="shopping_je"
+                  value="stres"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              C.&nbsp;&nbsp;&nbsp;Stres
+            </label>
+            <label for="ne_idem" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="ne_idem"
+                  name="shopping_je"
+                  value="ne_idem"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              D.&nbsp;&nbsp;&nbsp;Ne idem u blagdanski shopping
+            </label>
+  
+            <!-- Blagdanska groznica -->
+            <h3 class="form__question">Kada te počinje hvatati blagdanska groznica?</h3>
+            <label for="krenu_reklame" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="krenu_reklame"
+                  name="groznica"
+                  value="krenu_reklame"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              A.&nbsp;&nbsp;&nbsp;Kad krenu prve blagdanske reklame
+            </label>
+            <label for="ukrase_izlozi" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="ukrase_izlozi"
+                  name="groznica"
+                  value="ukrase_izlozi"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              B.&nbsp;&nbsp;&nbsp;Kada se ukrase izlozi dućana
+            </label>
+            <label for="cujem_bozicnu_pjesmu" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="cujem_bozicnu_pjesmu"
+                  name="groznica"
+                  value="cujem_bozicnu_pjesmu"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              C.&nbsp;&nbsp;&nbsp;Čim čujem prvu božićnu pjesmu
+            </label>
+            <label for="nikada" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="nikada"
+                  name="groznica"
+                  value="nikada"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              D.&nbsp;&nbsp;&nbsp;Nikada
+            </label>
+  
+            <!-- Ispod bora -->
+            <h3 class="form__question">Što želiš vidjeti ispod bora ove godine?</h3>
+            <label for="parfem_ili_beauty" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="parfem_ili_beauty"
+                  name="ispod_bora"
+                  value="parfem_ili_beauty"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              A.&nbsp;&nbsp;&nbsp;Parfem ili neki drugi beauty proizvod 
+            </label>
+            <label for="torba_ili_dodatak" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="torba_ili_dodatak"
+                  name="ispod_bora"
+                  value="torba_ili_dodatak"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              B.&nbsp;&nbsp;&nbsp;Torba ili neki drugi modni dodatak  
+            </label>
+            <label for="vesta_ili_drugi" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="vesta_ili_drugi"
+                  name="ispod_bora"
+                  value="vesta_ili_drugi"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              C.&nbsp;&nbsp;&nbsp;Božićna vesta ili neki drugi modni komad 
+            </label>
+            <label for="knjiga_svijeca_delicija" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="knjiga_svijeca_delicija"
+                  name="ispod_bora"
+                  value="knjiga_svijeca_delicija"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              D.&nbsp;&nbsp;&nbsp;Knjiga, mirisna svijeća, delicija 
+            </label>
+  
+            <!-- Kupovina koliko prije -->
+            <h3 class="form__question">Koliko prije Božića krećeš u kupnju poklona?</h3>
+            <label for="cijele_godine" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="cijele_godine"
+                  name="koliko_prije"
+                  value="cijele_godine"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              A.&nbsp;&nbsp;&nbsp;Kupujem ih cijele godine 
+            </label>
+            <label for="listopad" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="listopad"
+                  name="koliko_prije"
+                  value="listopad"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              B.&nbsp;&nbsp;&nbsp;U listopadu 
+            </label>
+            <label for="studeni" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="studeni"
+                  name="koliko_prije"
+                  value="studeni"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              C.&nbsp;&nbsp;&nbsp;U studenom 
+            </label>
+            <label for="badnjak" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="badnjak"
+                  name="koliko_prije"
+                  value="badnjak"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              D.&nbsp;&nbsp;&nbsp;Na Badnjak 
+            </label>
+  
+            <!-- Kome kupuješ darove -->
+            <h3 class="form__question">Kome sve kupuješ darove?</h3>
+            <label for="najuza_obitelj" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="najuza_obitelj"
+                  name="kome_sve"
+                  value="najuza_obitelj"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              A.&nbsp;&nbsp;&nbsp;Članovima najuže obitelji 
+            </label>
+            <label for="obitelj_prijatelji_kolege" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="obitelj_prijatelji_kolege"
+                  name="kome_sve"
+                  value="obitelj_prijatelji_kolege"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              B.&nbsp;&nbsp;&nbsp;Obitelji, prijateljima i kolegama s posla 
+            </label>
+            <label for="samo_djeci" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="samo_djeci"
+                  name="kome_sve"
+                  value="samo_djeci"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              C.&nbsp;&nbsp;&nbsp;Samo djeci 
+            </label>
+            <label for="nikome" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="nikome"
+                  name="kome_sve"
+                  value="nikome"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              D.&nbsp;&nbsp;&nbsp;Nikome 
+            </label>
+  
+            <!-- Gdje planiraš kupiti darove -->
+            <h3 class="form__question">Gdje planiraš kupiti  darove?</h3>
+            <label for="u_shopping_centru" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="u_shopping_centru"
+                  name="gdje_planiras_kupiti"
+                  value="u_shopping_centru"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              A.&nbsp;&nbsp;&nbsp;U shopping centru
+            </label>
+            <label for="na_nekom_webshopu" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="na_nekom_webshopu"
+                  name="gdje_planiras_kupiti"
+                  value="na_nekom_webshopu"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              B.&nbsp;&nbsp;&nbsp;Na nekom webu-shopu
+            </label>
+            <label for="ducani_u_gradu" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="ducani_u_gradu"
+                  name="gdje_planiras_kupiti"
+                  value="ducani_u_gradu"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              C.&nbsp;&nbsp;&nbsp;U dućanima u gradu
+            </label>
+            <label for="sama_izradujem" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="sama_izradujem"
+                  name="gdje_planiras_kupiti"
+                  value="sama_izradujem"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              D.&nbsp;&nbsp;&nbsp;Sam/a ih izrađujem
+            </label>
+  
+            <!-- Koliko novaca planirate potrošiti -->
+            <h3 class="form__question">Koliko novaca planirate potrošiti ove godine na darove?</h3>
+            <label for="koliko_god" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="koliko_god"
+                  name="planirate_potrositi"
+                  value="koliko_god"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              A.&nbsp;&nbsp;&nbsp;Koliko god je potrebno
+            </label>
+            <label for="priustiti_max_1000kn" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="priustiti_max_1000kn"
+                  name="planirate_potrositi"
+                  value="priustiti_max_1000kn"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              B.&nbsp;&nbsp;&nbsp;Koliko si mogu priuštiti, ali ne više od 1000kn 
+            </label>
+            <label for="koliko_osvojim" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="koliko_osvojim"
+                  name="planirate_potrositi"
+                  value="koliko_osvojim"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              C.&nbsp;&nbsp;&nbsp;Onoliko koliko osvojim u ovoj anketi :)
+            </label>
+            <label for="nista" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="nista"
+                  name="planirate_potrositi"
+                  value="nista"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              D.&nbsp;&nbsp;&nbsp;Ništa
+            </label>
+  
+            <!-- Što ti je najbitnije kod božićnog shoppinga? -->
+            <h3 class="form__question">
+              Što ti je najbitnije kod božićnog shoppinga?
+            </h3>
+            <label for="dobre_akcije" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="dobre_akcije"
+                  name="najbitnije"
+                  value="dobre_akcije"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              A.&nbsp;&nbsp;&nbsp;Da su trgovine pune robe na dobrim akcijama
+            </label>
+            <label for="odmor_kafic_napitak" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="odmor_kafic_napitak"
+                  name="najbitnije"
+                  value="odmor_kafic_napitak"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              B.&nbsp;&nbsp;&nbsp;Da se mogu odmoriti u kafiću uz neki božićni napitak
+            </label>
+            <label for="bozicni_ugodjaj_shopping_centra" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="bozicni_ugodjaj_shopping_centra"
+                  name="najbitnije"
+                  value="bozicni_ugodjaj_shopping_centra"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              C.&nbsp;&nbsp;&nbsp;Božićni ugođaj shopping centra
+            </label>
+            <label for="netko_drugi_obavi" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="netko_drugi_obavi"
+                  name="najbitnije"
+                  value="netko_drugi_obavi"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              D.&nbsp;&nbsp;&nbsp;Da netko drugi obavi shopping umjesto mene
+            </label>
+            <label for="dogadjanja_sadrzaji_slikanje" class="button__label radio__wrapper">
+              <span class="radio__input">
+                <input
+                  type="radio"
+                  id="dogadjanja_sadrzaji_slikanje"
+                  name="najbitnije"
+                  value="dogadjanja_sadrzaji_slikanje"
+                  class="form__answer"
+                />
+                <span class="radio__control"></span>
+              </span>
+              E.&nbsp;&nbsp;&nbsp;Događanja i zabavni sadržaj za djecu, slikanje s  
+              djedom Božićnjakom
+            </label>
+  
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Form text -->
+          <div class="form__text">
+            <h2 class="banner__text-2">otkrij nam svoju blagdansku shopping listu želja!!!</h2>
+            <p class="form__text__subhead" >Napiši što želiš dobiti ispod bora jer 10 najkreativnijih odgovora nagrađujemo poklon karticom Arena Centra od 1000 kn za blagdanski shopping!</p>
+          </div>
+
+          <!-- Form end box -->
+          <div class="form_end_wrapper">
+            <!-- Za ovaj Božić želim -->
+            <h3 class="text__first">
+              Za ovaj Božić želim:
+            </h3>
+            <textarea name="za_bozic_zelim" id="za_bozic_zelim" rows="30" cols="30" placeholder="Upiši svoj odgovor"></textarea>
+  
+            <!-- E-mail -->
+            <h3 class="text__second">
+              Upiši svoju e-mail adresu:
+            </h3>
+            <div>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                class="form__email"
+                placeholder="Upiši svoj e-mail ovdje"
+              />
+            </div>
+      
+            <div><input type="submit" id="submit-form" class="button--custom" value="POŠALJI"></div>
+      
+            <!-- Messages and loading -->
+            <div class="is-flex is-justify-content-center">
+              <div id="loading-indicator" class="is-hidden lds-ripple"><div></div><div></div><div></div><div></div></div>
+            </div>
+            <h6 class="is-hidden has-text-centered" id="error-msg" class="">Morate prihvatiti pravila privatnosti i kreativnog natječaja!</h6>
+            <h6 class="is-hidden has-text-centered" id="response-msg" class="">Vaša prijava je spremljena. Hvala na sudjelovanju!</h6>
+
+            
+            <!-- Pravila privatnosti -->
+            <div class="pravila__wrapper is-flex is-justify-content-center">
+              <div class="pravila__checkbox">
+                <input type="checkbox" id="pravila" name="pravila" value="prihvacam">
+                <label for="pravila" id="pravila"></label>
+              </div>
+              <div>
+                <h6 class="pravila">Prihvaćam <a class="link-pravila" href="http://www.adriamedia.hr/politika-privatnosti/"> pravila privatnosti</a> AMZ-a i <a class="link-pravila" href="https://story.hr/Lifestyle/a180913/Pravila-kreativnog-natjecaja-Za-Bozic-zelim.-by-Story-Arena-Centar.html">pravila kreativnog natječaja</a> i razumijem da će podaci u ovoj anketi biti podijeljeni s Arena Centrom.</h6>
+              </div>
+            </div>
+          </div>
+      </div>
+		</form>
+	</section>
+
+  <!--  FOOTER -->
+  <footer class="footer has-text-centered">
+    <div class="container-footer">
+      <h6>Sadržaj nastao u suradnji</h6>
+      <div class="branding">
+        <a href="http://www.adriamedia.hr" target="_blank"
+          ><img src="./assets/images/logo_story_red.svg" alt="Story logo"
+        /></a>
+        <a href="https://jysk.hr/" target="_blank"
+          ><img src="./assets/images/arena_centar_logo_bijeli.jpg" alt="Arena Centar logo" />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main -->
+  <script type="text/javascript" src="lib/main.js?v=3"></script>
+
+  </body>
+</html>
