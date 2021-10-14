@@ -1,0 +1,38 @@
+@use '../utilities' as *;
+@use '../base' as *;
+
+.button--custom {
+    height: 54px;
+    width: 250px;
+    display: block;
+    font-family: $family-primary;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 52px;
+    border: none;
+    border-radius: 26px;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.4);
+    color: white;
+    background-color: lighten($color: $gold-dark, $amount: 2);
+    padding: 0;
+    text-transform: uppercase;
+    margin: 50px auto;
+  
+    &:hover {
+      background: $golden-grad;
+    }
+
+    @include for-phone {
+        height: 40px;
+        width: 80%;
+        line-height: 1;
+    }
+}
+
+.button {
+    &:active, &:focus, &:focus:not(:active) {
+        color: white;
+        border-color: none;
+        box-shadow: none;
+    }
+}
