@@ -615,6 +615,12 @@ form {
     display: none;
   }
 }
+@media screen and (min-width: 1360px) {
+  .divider {
+    display: block;
+    margin: 137px 85px;
+  }
+}
 
 .lista__zelja {
   height: auto;
@@ -630,6 +636,11 @@ form {
   .form__text {
     margin-top: 70px;
     width: 60%;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .form__text {
+    margin-top: 0px;
   }
 }
 .form__text__subhead {

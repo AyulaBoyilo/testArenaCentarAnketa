@@ -112,6 +112,11 @@ form {
     @include for-phone {
         display: none;
     }
+
+    @media screen and (min-width: 1360px) {
+        display: block;
+        margin: 137px 85px;
+    }
 }
 
 // 2nd part of form
@@ -128,6 +133,10 @@ form {
     @include for-tablet {
         margin-top: 70px;
         width: 60%;
+    }
+
+    @media screen and (min-width: 1360px) {
+        margin-top: 0px;
     }
 
     &__subhead {
