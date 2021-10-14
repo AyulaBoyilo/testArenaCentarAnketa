@@ -459,7 +459,7 @@ input[type=checkbox i] {
     max-width: 70vw;
   }
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 1500px) {
   .container-footer {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -821,7 +821,7 @@ form {
     top: -20px;
   }
 }
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 1500px) {
   .header h3 {
     width: 35vw;
   }
@@ -875,7 +875,7 @@ form {
 }
 
 .banner {
-  background: url("../../assets/images/arena_back.jpg") no-repeat center/cover;
+  background: url("../assets/images/arena_back.jpg") no-repeat center/cover;
   height: 65.47vw;
 }
 .banner__text, .banner__text-2 {
