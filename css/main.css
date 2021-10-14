@@ -821,7 +821,7 @@ form {
     top: -20px;
   }
 }
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1360px) {
   .header h3 {
     width: 35vw;
   }
