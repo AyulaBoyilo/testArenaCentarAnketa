@@ -1,0 +1,117 @@
+@use '../utilities' as *;
+@use '../base/typography' as *;
+
+.footer {
+    background-color: white !important;
+    padding-top: 100px;
+
+    @include for-widescreen {
+      background-color: $light-pink !important;
+    }
+
+    @include for-tablet {
+      padding: 0px 0 60px !important;
+    }
+  
+    @include for-phone {
+      padding: 0 0 20px!important;
+    }
+  }
+
+  .branding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      height: auto;
+      width: 11vw;
+    }
+
+    a:first-of-type {
+      height: auto;
+      width: 8vw;
+    }
+
+    @include for-phone {
+      a {
+        height: auto;
+        width: 35vw;
+      }
+  
+      a:first-of-type {
+        height: auto;
+        width: 25vw;
+      }
+    }
+  }
+  
+  .container-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h6,
+    a {
+      padding: 10px;
+      font-family: $family-primary;
+      font-size: 18px;
+    }
+  
+    @include for-tablet {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+
+      .branding {
+        a {
+          height: auto;
+          width: 20vw;
+        }
+    
+        a:first-of-type {
+          height: auto;
+          width: 16vw;
+        }
+      }
+    }
+  
+    @include for-desktop {
+      font-size: 20px;
+    }
+  
+    @include for-phone {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+  
+      .branding {
+        display: flex;
+        max-width: 70vw;
+      }
+    }
+
+    @media screen and (min-width: 2000px) {
+      flex-direction: row;
+
+      .branding {
+        display: flex;
+        max-width: 70vw;
+
+        a {
+          height: auto;
+          width: 11vw;
+        }
+  
+        a:first-of-type {
+          height: auto;
+          width: 8vw;
+        }
+      }
+    }
+  }
