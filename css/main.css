@@ -892,7 +892,7 @@ form {
 }
 .banner__text, .banner__text-2 {
   color: #cb0000;
-  font-family: "Festive", cursive;
+  font-family: "Amatic SC", cursive;
   font-size: 5vw;
   line-height: 1;
 }
@@ -904,20 +904,26 @@ form {
 }
 .banner__text {
   margin-left: 20vw;
-  padding-top: 8vw;
+  padding-top: 19vw;
   width: 38.2vw;
 }
 @media (max-width: 767px) {
   .banner__text {
-    font-size: 6.2vw;
+    font-size: 6vw;
     line-height: 1.5;
     margin-left: 15vw;
+    padding-top: 8vw;
     text-align: left;
   }
 }
 .banner__text-2 {
-  font-size: 7.5vw;
+  font-size: 9vw;
   line-height: 1.1;
+}
+@media (min-width: 768px) {
+  .banner__text-2 {
+    text-align: center;
+  }
 }
 @media (max-width: 767px) {
   .banner__text-2 {
@@ -929,7 +935,8 @@ form {
 }
 @media screen and (min-width: 2000px) {
   .banner__text-2 {
-    font-size: 7vw;
+    font-size: 9vw;
+    text-align: left;
   }
 }
 

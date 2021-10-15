@@ -7,7 +7,7 @@
 
     &__text, &__text-2 {
         color: $festive-red;
-        font-family: 'Festive', cursive;
+        font-family: 'Amatic SC', cursive;
         font-size: 5vw;
         line-height: 1;
 
@@ -20,21 +20,26 @@
     
     &__text {
         margin-left: 20vw;
-        padding-top: 8vw;
+        padding-top: 19vw;
         width: 38.2vw;
         
         @include for-phone {
-            font-size: 6.2vw;
+            font-size: 6vw;
             line-height: 1.5;
             margin-left: 15vw;
+            padding-top: 8vw;
             text-align: left;
         }
     }
 
     &__text-2 {
-        font-size: 7.5vw;
+        font-size: 9vw;
         line-height: 1.1;
         
+        @include for-tablet {
+            text-align: center;
+        }
+
         @include for-phone {
             font-size: 12vw;
             line-height: 1.27;
@@ -43,7 +48,8 @@
         }
 
         @media screen and (min-width: 2000px) {
-            font-size: 7vw;
+            font-size: 9vw;
+            text-align: left;
         }
     }
 }
