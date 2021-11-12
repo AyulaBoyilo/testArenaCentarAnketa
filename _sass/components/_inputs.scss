@@ -184,3 +184,13 @@ input[type=checkbox i] {
         color: $festive-red;
     }
 }
+
+// Newsletter
+.pravila__text {
+    width: 60vw;
+    margin-bottom: 25px;
+
+    @include for-phone {
+        width: 90vw;
+    }
+}

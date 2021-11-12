@@ -241,6 +241,16 @@ input[type=checkbox i] {
   color: #cb0000;
 }
 
+.pravila__text {
+  width: 60vw;
+  margin-bottom: 25px;
+}
+@media (max-width: 767px) {
+  .pravila__text {
+    width: 90vw;
+  }
+}
+
 #error-msg, #response-msg {
   color: #800000;
   font-family: "Roboto", sans-serif;

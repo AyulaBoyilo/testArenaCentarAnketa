@@ -782,7 +782,7 @@
             <div class="is-flex is-justify-content-center">
               <div id="loading-indicator" class="is-hidden lds-ripple"><div></div><div></div><div></div><div></div></div>
             </div>
-            <h6 class="is-hidden has-text-centered" id="error-msg" class="">Morate prihvatiti pravila privatnosti i kreativnog natječaja!</h6>
+            <h6 class="is-hidden has-text-centered" id="error-msg" class="">Morate prihvatiti pravila privatnosti i kreativnog natječaja te pristati na primanje newslettera!</h6>
             <h6 class="is-hidden has-text-centered" id="response-msg" class="">Vaša prijava je spremljena. Hvala na sudjelovanju!</h6>
 
             
@@ -792,10 +792,22 @@
                 <input type="checkbox" id="pravila" name="pravila" value="prihvacam">
                 <label for="pravila" id="pravila"></label>
               </div>
-              <div>
+              <div class="pravila__text">
                 <h6 class="pravila">Prihvaćam <a class="link-pravila" href="http://www.adriamedia.hr/politika-privatnosti/"> pravila privatnosti</a> AMZ-a i <a class="link-pravila" href="https://story.hr/Lifestyle/a180913/Pravila-kreativnog-natjecaja-Za-Bozic-zelim.-by-Story-Arena-Centar.html">pravila kreativnog natječaja</a> i razumijem da će podaci u ovoj anketi biti podijeljeni s Arena Centrom.</h6>
               </div>
             </div>
+
+            <!-- Newsletter -->
+            <div class="pravila__wrapper is-flex is-justify-content-center">
+              <div class="pravila__checkbox">
+                <input type="checkbox" id="newsletter" name="newsletter" value="pristajem">
+                <label for="newsletter" id="newsletter"></label>
+              </div>
+              <div class="pravila__text">
+                <h6 class="pravila">Pristajem da mi Arena Centar šalje newslettere s najnovijim vijestima i promotivnim ponudama</h6>
+              </div>
+            </div>
+
           </div>
       </div>
 		</form>
